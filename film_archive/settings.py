@@ -34,7 +34,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-mdixon5-filmarchive-ibvl8yk8dy8.ws.codeinstitute-ide.net',
-    'film-archive-88923d1e22ef.herokuapp.com/',
+    'film-archive-88923d1e22ef.herokuapp.com',
     '8080-mdixon5-filmarchive-ibvl8yk8dy8.ws.codeinstitute-ide.net'
 ]
 
