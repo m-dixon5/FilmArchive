@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-klgu_%lj&f7h_2tq6wp0&-%*7wxoq(5x%-te0h)=y2u1=i=!9e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-mdixon5-filmarchive-ibvl8yk8dy8.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [
+    '8000-mdixon5-filmarchive-ibvl8yk8dy8.ws.codeinstitute-ide.net',
+    'https://film-archive-88923d1e22ef.herokuapp.com/',
+    '8080-mdixon5-filmarchive-ibvl8yk8dy8.ws.codeinstitute-ide.net'
+]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net','https://*.herokuapp.com']
 
