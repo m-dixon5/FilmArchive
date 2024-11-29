@@ -7,6 +7,7 @@ body {
     background-color: #343434 !important;
 }
 
+/* Navbar */
 #logo {
     height: 40px;
     width: 219px;
@@ -15,4 +16,16 @@ body {
 .nav-link {
     margin: 8px 30px;
     color: #fdfffd;
+}
+
+/* Footer */
+.footer-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px 0px;
+}
+
+.footer-container {
+    background-color: #bfbfbf;
+    border-radius: 7px;
 }
