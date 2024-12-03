@@ -12,18 +12,18 @@ class Review(models.Model):
     Model for creating reviews
     """
     user = models.ForeignKey(User, related_name='review_author', on_delete=models.CASCADE)
-    summary = models.CharField(max_length=100)
-    review = RichTextField(max_length=5000)
+    film_title = models.CharField(max_length=100, null=False, blank=False)
     film_image = ResizedImageField(
         size=(300, 450), quality=75, upload_to='reviews/', force_format='WEBP',
         blank=False, null=False
     )
-    film_title = models.CharField(max_length=100, null=False, blank=False)
     film_rating = models.DecimalField(
         max_digits=3, decimal_places=1,
         validators=[MaxValueValidator(10.0), MinValueValidator(0.0)],  
         null=False, blank=False
     )
+    summary = models.CharField(max_length=100)
+    review = RichTextField(max_length=5000)
     date_watched = models.DateField()
     posted_on = models.DateTimeField(auto_now=True)
 
