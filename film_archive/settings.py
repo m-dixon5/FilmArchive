@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     
     #Apps
     'home',
+    'reviews',
 
     #Other
     'cloudinary_storage',
