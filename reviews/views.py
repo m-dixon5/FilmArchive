@@ -1,10 +1,12 @@
 from django.views.generic import CreateView
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 from .models import Review
 from .forms import ReviewForm
 
 # Create your views here.
-class AddReview(CreateView):
+class AddReview(LoginRequiredMixin, CreateView):
     """ Add review view """
     template_name = 'reviews/add_review.html'
     model = Review
