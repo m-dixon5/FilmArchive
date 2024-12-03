@@ -79,7 +79,8 @@ DJRICHTEXTFIELD_CONFIG = {
             ['Format', 'Bold', 'Italic', 'Underline'],
             ['NumberedList', 'BulletedList'], ['Undo', 'Redo'],
             ['Maximize']
-        ]
+        ],
+        'format_tags': 'p;h1;h2;h3'
     }
 }
 
