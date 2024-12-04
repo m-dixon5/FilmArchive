@@ -1,22 +1,26 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 
-{% block title %}Recipes{% endblock %}
+{% block title %}Reviews{% endblock %}
 
-{% block content %}
+{% block content %} 
+<h1 class="text-center p-2 d-block reviews-heading">
+    Reviews
+</h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
-    <h1 class="text-center">Reviews</h1>
-
-    {% for review in reviews %}
-    <a href="" class="review-card" aria-label="Click to view {{review.title}}">
-        <div class="card" style="width: 18rem;">
-            <img src="{{review.image.url}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h2 class="card-title">{{review.title}}</h2>
-              <p class="card-text">{{review.summary|truncatechars:100}}</p>
+    {% for review in reviews %} 
+    <a href="" class="review-card" aria-label="Click to view {{review.film_title}}">
+        <div class="card m-3 text-center justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm-4 col-5 d-flex align-items-center justify-content-center">
+                    <img src="{{review.film_image.url}}" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body col-sm-8 col-7 ">
+                <h2 class="card-title">{{review.film_title}}</h2>
+                <p class="card-text">{{review.summary|truncatechars:100}}</p>
+                </div>
             </div>
         </div>
     </a>
     {% endfor %}
 </div>
-
 {% endblock %}
