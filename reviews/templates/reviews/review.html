@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Recipes{% endblock %}
+
+{% block content %}
+<div class="container d-flex flex-row flex-wrap justify-content-center">
+    <h1 class="text-center">Reviews</h1>
+
+    {% for review in reviews %}
+    <a href="" class="review-card" aria-label="Click to view {{review.title}}">
+        <div class="card" style="width: 18rem;">
+            <img src="{{review.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">{{review.title}}</h2>
+              <p class="card-text">{{review.summary|truncatechars:100}}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+{% endblock %}
