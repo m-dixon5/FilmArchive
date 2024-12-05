@@ -7,13 +7,20 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('reviews', '0001_initial'),
+        ("reviews", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='review',
-            name='film_rating',
-            field=models.DecimalField(decimal_places=1, max_digits=3, validators=[django.core.validators.MaxValueValidator(10.0), django.core.validators.MinValueValidator(0.0)]),
+            model_name="review",
+            name="film_rating",
+            field=models.DecimalField(
+                decimal_places=1,
+                max_digits=3,
+                validators=[
+                    django.core.validators.MaxValueValidator(10.0),
+                    django.core.validators.MinValueValidator(0.0),
+                ],
+            ),
         ),
     ]

@@ -4,22 +4,30 @@ from .models import Review
 
 
 class ReviewForm(forms.ModelForm):
-    """ Form to create a Review """
+    """Form to create a Review"""
+
     class Meta:
         model = Review
-        fields = ['film_title', 'film_image', 'film_rating', 'summary', 'review', 'date_watched']
+        fields = [
+            "film_title",
+            "film_image",
+            "film_rating",
+            "summary",
+            "review",
+            "date_watched",
+        ]
 
         review = forms.CharField(widget=RichTextWidget())
 
         widget = {
-            'summary': forms.Textarea(attrs={'rows': 3}),
+            "summary": forms.Textarea(attrs={"rows": 3}),
         }
 
         labels = {
-            'film_title': 'Film Title',
-            'film_image': 'Film Image',
-            'film_rating': 'Rating',
-            'summary': 'Review Summary',
-            'review': 'Review',
-            'date_watched': 'Date Watched',
+            "film_title": "Film Title",
+            "film_image": "Film Image",
+            "film_rating": "Rating",
+            "summary": "Review Summary",
+            "review": "Review",
+            "date_watched": "Date Watched",
         }
