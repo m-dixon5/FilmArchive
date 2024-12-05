@@ -8,7 +8,7 @@
 </h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
     {% for review in reviews %} 
-    <a href="" class="review-card" aria-label="Click to view {{review.film_title}}">
+    <a href="{% url 'review_detail' review.id %}" class="review-card" aria-label="Click to view {{review.film_title}}">
         <div class="card m-3 text-center justify-content-center align-items-center">
             <div class="row">
                 <div class="col-sm-4 col-5 d-flex align-items-center justify-content-center">

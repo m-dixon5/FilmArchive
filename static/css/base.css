@@ -110,6 +110,10 @@ main {
   width: 120px;
 }
 
+.comments-container {
+  height: 100px;
+}
+
 @media screen and (max-width: 420px) {
   .card {
     width: 18rem;

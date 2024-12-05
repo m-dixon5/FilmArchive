@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Review Detail - {{recipe.title}}{% endblock %}
+
+{% block content %}
+    <div class="review-detail-container">
+        <div class="row review-info mt-3 p-1">
+            <!-- Image section -->
+            <div class="col-12 col-sm-3 review-detail-img">
+                <img src="{{review.film_image.url}}" alt="" class="review-pic">
+
+            </div>
+            <div class="col-12 col-sm-9 review-detail">
+                <!-- Title, rating and review-->
+                <h1 class="text-center">{{ review.film_title }}</h1>
+                <h2 class="text-center">by {{ review.user }}</h2>
+                <hr>
+                <p><strong>{{ review.film_rating }}</strong></p>
+                <div class="review-container">
+                    <h2>Review</h2>
+                    <p>{{ review.review|safe }}</p>
+                </div>
+                <!-- Edit review buttons if user matches the user who created the review-->
+                {% if request.user == review.user %}
+                    <div class="text-end">
+                        <a href=""><button class="form-button">Edit</button></a>
+                        <a href=""><button class="form-button">Delete</button></a>
+                    </div>
+                {% endif %}
+                <!-- Comments Section -->
+                <div class="row comments-container">
+                    <h2>Comments</h2>
+                    <div>
+                        <h3 class="user-comment-title"></h3>
+                        <p class="user-comment"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

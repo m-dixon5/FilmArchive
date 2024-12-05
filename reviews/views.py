@@ -18,7 +18,7 @@ class UserReviews(ListView):
 class ReviewDetail(DetailView):
     """View individual reviews in more detail"""
 
-    template_name = "reviews/review.html"
+    template_name = "reviews/review_detail.html"
     model = Review
     context_object_name = "review"
 
