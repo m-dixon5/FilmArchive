@@ -3,39 +3,51 @@
 {% block title %}Review Detail - {{recipe.title}}{% endblock %}
 
 {% block content %}
-    <div class="review-detail-container">
-        <div class="row review-info mt-3 p-1">
-            <!-- Image section -->
-            <div class="col-12 col-sm-3 review-detail-img">
-                <img src="{{review.film_image.url}}" alt="" class="review-pic">
+<div class="mx-3 mx-sm-5" id="review-page">
+    <div class="review-heading-section">
+        <h1 class="review-title">{{ review.film_title }}</h1>
+        <p class="review-user-tag">Review by {{review.user}}</p>
+    </div>
+    <div class="review-info mt-3 p-1">
+        <div class="review-img row align-items-center">
+            <div class="col-12 col-sm-5 col-md-12 d-flex justify-content-center">
+                <img src="{{ review.film_image.url }}" alt="" class="review-pic">
+            </div>
+            <div class="row col-sm-7 col-md-12 p-3 mt-2">
+                <div class="col-6 col-lg-6 col-md-12 p-2 rating-container">
+                    <p class="rating-title"><span class="rating-score">{{ review.film_rating }}</span> <span class="out-of">/ 10</span></p>
+                </div>
+                <div class="col-6 col-lg-6 col-md-12 p-2 text-center">
+                    <p class="m-0"><span class="date-watched-title">Date watched :</span></p>
+                    <p class="date-watched">{{ review.date_watched }}</p>
+                </div>
+            </div>
 
+            <!-- {% if request.user == review.user %} 
+            <div class="col-12 col-sm-7 col-md-12 my-4 edit-buttons text-center">
+                <a href=""><button class="form-button">Edit</button></a>
+                <a href=""><button class="form-button">Delete</button></a>
             </div>
-            <div class="col-12 col-sm-9 review-detail">
-                <!-- Title, rating and review-->
-                <h1 class="text-center">{{ review.film_title }}</h1>
-                <h2 class="text-center">by {{ review.user }}</h2>
-                <hr>
-                <p><strong>{{ review.film_rating }}</strong></p>
-                <div class="review-container">
-                    <h2>Review</h2>
-                    <p>{{ review.review|safe }}</p>
-                </div>
-                <!-- Edit review buttons if user matches the user who created the review-->
-                {% if request.user == review.user %}
-                    <div class="text-end">
-                        <a href=""><button class="form-button">Edit</button></a>
-                        <a href=""><button class="form-button">Delete</button></a>
-                    </div>
-                {% endif %}
-                <!-- Comments Section -->
-                <div class="row comments-container">
-                    <h2>Comments</h2>
-                    <div>
-                        <h3 class="user-comment-title"></h3>
-                        <p class="user-comment"></p>
-                    </div>
-                </div>
+            {% endif %} -->
+        </div>
+        <div class="review-detail">
+            <div class="review-content">
+                <h2 class="content-heading">Review</h2>
+                <hr class="sub-hr">
+                <p class="">{{ review.review|safe }}</p>
             </div>
+
+
         </div>
     </div>
+    
+    <div class="review-container">
+ 
+        <div class="comments p-3">
+            <h2 class="content-heading">Comments</h2>
+            <hr class="sub-hr">
+            <p>comments go here</p>
+        </div>
+    </div>
+</div>
 {% endblock %}

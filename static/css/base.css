@@ -70,7 +70,6 @@ main {
   letter-spacing: 1px;
   background-color: #65a1c9;
   color: #181818;
-  box-shadow: #ffffff 0px 7px 29px 0px;
 }
 
 .forgot-password {
@@ -114,18 +113,216 @@ main {
   height: 100px;
 }
 
-@media screen and (max-width: 420px) {
-  .card {
-    width: 18rem;
-    font-size: 11px;
+/* Review Detail Pages */
+#review-page {
+  color: #fdfffd;
+}
+
+.review-title {
+  font-weight: 350;
+  font-size: 30px;
+}
+
+.review-user-tag {
+  opacity: 0.8;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #343434;
+  border-radius: 10px;
+}
+
+.review-container {
+  display: flex;
+  margin: 30px 0px;
+  justify-content: center;
+}
+
+.review, .comments, .review-detail {
+  width: 100%;
+}
+
+.review-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem auto;
+}
+
+.review-pic {
+  width: 250px;
+  height: 375px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.review-content {
+  background-color: #343434;
+  padding: 15px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.comments {
+  background-color: #343434;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 100%;
+  
+}
+
+.content-heading {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.sub-hr {
+  opacity: 1;
+  color: #65a1c9;
+  width: 150px;
+  margin: 10px 0px;
+}
+
+.edit-buttons button {
+  margin: 0px 10px;
+}
+
+.rating-title {
+  font-size: 25px;
+}
+
+.out-of {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.rating-score {
+  padding: 0px 10px;
+  background-color: #3fd56f;
+  border-radius: 5px;
+}
+
+.rating-container {
+  text-align: center;
+}
+
+.review-heading-section {
+  padding: 10px 10px 10px 20px;
+  background-color: #343434;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 1000px;
+}
+
+.review-user-tag {
+  margin: 0px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .review-detail {
+    width: 60%;
   }
 
-  .card-title {
-    font-size: 14px;
+  .review-img {
+    width: 40%;
   }
 
-  .card-body {
-    padding: 5px;
+  .review-pic {
+    margin-left: 20px;
+    width: 200px;
+    height: 300px;
+  }
+
+  .review-content {
+    margin: 10px 0px;
+  }
+  
+  .comments {
+    margin: 10px 0px;
+  }
+
+  .review-title {
+    font-size: 35px;
   }
 }
+
+@media screen and (min-width: 768px) {
+
+  .review-info {
+    flex-direction: row;
+    height: 530px;
+    overflow: auto;
+  }
+
+  .review-img {
+    width: 30%;
+  }
+
+  .review-detail {
+    width: 70%;
+    padding: 2rem;
+
+  }
+
+  .review-container {
+    flex-direction: row;
+  }
+
+  .rating-container {
+    text-align: none;
+  }
+
+  .date-watched {
+    font-size: 16px;
+  }
+
+  .date-watched-title {
+    font-size: 14px;
+    opacity: 0.8;
+
+  }
+
+  .review-title {
+    font-size: 35px;
+  }
+
+  .comments {
+    width: 75%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .review-detail {
+    width: 100%;
+  }
+
+  .review-img {
+    width: 100%;
+  }
+
+  .review-pic {
+    margin: 0px;
+  }
+
+  .review-title {
+    font-size: 30px;
+  }
+
+  .film-info {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .review-title {
+    font-size: 20px;
+  }
+}
+
 
