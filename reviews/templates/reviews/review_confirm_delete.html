@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Delete Review {{ object.film_title }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mt-2">Confirm Review Deletion</h1>
+        <div class="d-flex justify-content-center pt-3">
+            <form class="text-center" method="post">
+                {% csrf_token %}
+                <p>Are you sure you want to delete "{{ object.film_title }}"</p>
+                <input type="submit" value="Confirm" class="form-button">
+            </form>
+        </div>
+    </div>
+{% endblock %}
