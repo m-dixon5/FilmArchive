@@ -8,6 +8,15 @@
         <h1 class="review-title">{{ review.film_title }}</h1>
         <p class="review-user-tag">Review by {{review.user}}</p>
     </div>
+
+    <!-- Edit and Delete buttons -->
+    {% if request.user == review.user %} 
+    <div class="col-12 col-sm-7 col-md-12 my-4 edit-buttons">
+        <a href=""><button class="form-button">Edit</button></a>
+        <a href=""><button class="form-button">Delete</button></a>
+    </div>
+    {% endif %}
+
     <div class="review-info mt-3 p-1">
         <div class="review-img row align-items-center">
             <div class="col-12 col-sm-5 col-md-12 d-flex justify-content-center">
@@ -23,12 +32,7 @@
                 </div>
             </div>
 
-            <!-- {% if request.user == review.user %} 
-            <div class="col-12 col-sm-7 col-md-12 my-4 edit-buttons text-center">
-                <a href=""><button class="form-button">Edit</button></a>
-                <a href=""><button class="form-button">Delete</button></a>
-            </div>
-            {% endif %} -->
+
         </div>
         <div class="review-detail">
             <div class="review-content">
