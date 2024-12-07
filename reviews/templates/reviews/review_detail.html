@@ -12,7 +12,7 @@
     <!-- Edit and Delete buttons -->
     {% if request.user == review.user %} 
     <div class="col-12 col-sm-7 col-md-12 my-4 edit-buttons">
-        <a href=""><button class="form-button">Edit</button></a>
+        <a href="{% url 'edit_review' review.id %}"><button class="form-button">Edit</button></a>
         <a href="{% url 'delete_review' review.id %}"><button class="form-button">Delete</button></a>
     </div>
     {% endif %}
