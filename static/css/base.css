@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
-  background-color: #363d43;
-  overflow: auto;
+  background-color: #232323;
+  overflow-x: hidden;
+  
 }
 
 body {
@@ -10,9 +11,26 @@ body {
   min-height: 100vh;
 }
 
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Navbar */
 #navbar {
-  background-color: #363d43 !important;
+  background-color: #232323 !important;
 }
 
 #logo {
@@ -39,7 +57,8 @@ main {
 }
 
 .footer-container {
-  background-color: #363d43;
+  background-color: #232323;
+  margin: 20px 0px 30px;
 }
 
 /* Forms */
@@ -157,6 +176,7 @@ main {
   height: 375px;
   border-radius: 10px;
   margin-left: 20px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
 }
 
 .review-content {
@@ -181,7 +201,7 @@ main {
 
 .sub-hr {
   opacity: 1;
-  color: #65a1c9;
+  color: #ff5b3c;
   width: 150px;
   margin: 10px 0px;
 }
@@ -219,6 +239,10 @@ main {
 
 .review-user-tag {
   margin: 0px;
+}
+
+.rating-date {
+  padding: 20px 10px 10px;
 }
 
 /* Media Queries */
