@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     #Apps
     'home',
     'reviews',
+    'profiles',
 
     #Other
     'crispy_forms',
