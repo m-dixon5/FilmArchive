@@ -1,1 +1,38 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block title %}Profile - {{profile.user.username}}{% endblock %}
+
+{% block content %}
+<div class="container p-4" style="color: #ffffff;">
+    <div class="profile">
+        <div class="info">
+            <div class="profile-img text-center">
+                {% if profile.img.url is not none %}
+                <img src="{{ profile.image.url }}" alt="{{ profile.user.username }}'s profile image">
+                {% else %}
+                <img src="{% static '/images/nobody.webp' %}" alt="Profile Image none icon">
+                {% endif %}
+            </div>
+            <h1>{{ profile.user.username }}</h1>
+            <p><strong>Joined: </strong>{{ profile.user.date_joined|date:'d M Y' }}</strong></p>
+            <p><strong>Reviews: </strong>{{ profile.user.review_author.count }}</p>
+            {% if profile.bio is not none %}
+            {{ profile.bio|safe }}
+            {% endif %}
+        </div>
+        <h2 class="text-center pb-4">Reviews</h2>
+        <div class="profile-reviews row">
+            {% for review in profile.user.review_author.all %}
+            <div class="review-card col-3">
+                <a href="{% url 'review_detail' review.id %}">
+                    <img src="{{ review.film_image.url }}" alt="Go to {{ review.user }}'s review of {{ review.film_title }}">
+                    <h3>{{ review.film_title }}</h3>
+                    {{ review.date_watched }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>  
+    </div>
+</div>
+{% endblock %}
