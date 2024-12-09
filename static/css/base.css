@@ -245,8 +245,96 @@ main {
   padding: 20px 10px 10px;
 }
 
-/* Media Queries */
+/* Profiles */
+#account-container {
+  color: #fdfffd;
+}
 
+.account-film-img {
+  height: 180px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+.review-account-card {
+  background-color: #343434;
+  padding-top: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.review-account-card a {
+  text-decoration: none;
+  color: #fdfffd;
+}
+
+.film-card-title {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.film-card-break {
+  color: #ff5b3c;
+  opacity: 1;
+  margin: 5px;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+  color: #fdfffd;
+}
+
+.about-user-section {
+  background-color: #343434;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.profile-username {
+  font-size: 30px;
+}
+
+.profile-info-break {
+  opacity: 1;
+  color: #ff5b3c;
+  width: 200px;
+  margin: 5px 0px 15px;
+}
+
+/* Collapse sections */
+.collapsible {
+  background-color: #343434;
+  color: #fdfffd;
+  cursor: pointer;
+  padding: 5px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active .collapsible:hover {
+  background-color: #535353;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
   .review-detail {
     width: 60%;
@@ -272,6 +360,11 @@ main {
 
   .review-title {
     font-size: 35px;
+  }
+
+  .profile-img {
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -341,12 +434,33 @@ main {
   .film-info {
     margin-left: 15px;
   }
+
+  .profile-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .review-account-card {
+    width: 200px;
+  }
+
+  .about-user-section {
+    margin-top: 40px;
+  }
+
+  .profile-img-section {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .review-title {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 576px) {
+
 }
 
 
