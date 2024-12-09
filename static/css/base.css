@@ -28,6 +28,59 @@ body {
   background: #555;
 }
 
+/* Home */
+.hero-container {
+  color: #fdfffd;
+  background-color: #343434;
+  border: 0px solid #fdfffd;
+  border-radius: 5px;
+}
+
+.hero-section {
+  background-image: url('../images/4fxxbm4opjd31.webp');
+  border-radius: 10px;
+}
+
+.hero-text {
+  background-color: #343434;
+  
+}
+
+.hero-button-1 {
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  background-color: #fdfffd;
+  color: #181818;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: all 0.5s ease;
+  font-weight: 500;
+}
+
+.hero-button-1:hover {
+  letter-spacing: 1px;
+  background-color: #ff5b3c;
+  color: #181818;
+}
+
+.hero-header {
+  font-size: 35px;
+}
+
+.hero-callout {
+  font-size: 1rem;
+}
+
+.break {
+  opacity: 1;
+  color: #ff5b3c;
+  width: 300px;
+  margin: 10px 0px 20px;
+}
+
 /* Navbar */
 #navbar {
   background-color: #232323 !important;
@@ -451,6 +504,14 @@ main {
   .profile-img-section {
     text-align: center;
   }
+
+  .hero-text {
+    border-radius: 10px;
+  }
+
+  .hero-button-1 {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -460,7 +521,9 @@ main {
 }
 
 @media screen and (max-width: 576px) {
-
+  .hero-section {
+    border-radius: 0px;
+  }
 }
 
 

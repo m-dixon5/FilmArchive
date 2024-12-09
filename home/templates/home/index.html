@@ -1,1 +1,24 @@
 {% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container my-3 hero-container">
+    <div class="row p-4 pb-4 pb-lg-0 pe-lg-0 pt-lg-5 align-items-center hero-section">
+        <div class="col-lg-6 p-3 p-lg-5 pt-lg-3 hero-text">
+          <h1 class="display-4 fw-bold lh-1 hero-header mb-3">Border hero with cropped image and shadows</h1>
+          <p class="lead hero-callout mb-3">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <hr class="break">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a href="/accounts/signup"><button type="button" class="hero-button-1">Sign Up</button></a>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+          <div></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
