@@ -10,8 +10,8 @@ from django.contrib.auth.mixins import (
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Review
-from .forms import ReviewForm
+from .models import Review, Comment
+from .forms import ReviewForm, CommentForm
 
 
 # Create your views here.
@@ -29,6 +29,12 @@ class ReviewDetail(DetailView):
     template_name = "reviews/review_detail.html"
     model = Review
     context_object_name = "review"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Add the comment form to the context
+        context['form'] = CommentForm()
+        return context
 
 
 class AddReview(LoginRequiredMixin, CreateView):
@@ -63,5 +69,17 @@ class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+
+
+class AddComment(LoginRequiredMixin, CreateView):
+    """View to add a comment"""
+    template_name= 'reviews/review_detail.html'
+    model = Comment
+    form_class = CommentForm
+    success_url = '/reviews/'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(AddComment, self).form_valid(form)
 
 
