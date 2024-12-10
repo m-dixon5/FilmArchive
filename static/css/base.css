@@ -298,6 +298,86 @@ main {
   padding: 20px 10px 10px;
 }
 
+/* Add comment modal */
+#modal-content {
+  background-color: #343434;
+}
+
+.comment-form {
+  color: #fdfffd;
+  background-color: #343434;
+  padding: 0px 20px 20px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+  padding: 0px;
+}
+
+.comment-button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  background-color: #ff5b3c;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  margin-right: 5px;
+}
+
+.comment-button:hover {
+  letter-spacing: 1px;
+  background-color: #fdfffd;
+  color: #181818;
+}
+
+.comment-close-button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  background-color: #6c757d;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: #fdfffd;
+  margin-left: 5px;
+}
+
+.comment-close-button:hover {
+  letter-spacing: 1px;
+  background-color: #fdfffd;
+  color: #181818;
+}
+
+.close-modal-button {
+  background-color: #fdfffd;
+}
+
+.add-comment-button {
+  background-color: #fdfffd;
+  color: #181818;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 14px;
+  font-size: 20px;
+  margin: 18px 20px 0px;
+}
+
+.add-comment-button:hover {
+  background-color: #ff5b3c;
+  color: #181818;
+}
+
+.add-comment {
+  text-align: end;
+}
+
 /* Profiles */
 #account-container {
   color: #fdfffd;
