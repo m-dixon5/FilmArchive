@@ -1,6 +1,6 @@
 from django import forms
 from djrichtextfield.widgets import RichTextWidget
-from .models import Review
+from .models import Review, Comment
 
 
 class ReviewForm(forms.ModelForm):
@@ -31,3 +31,13 @@ class ReviewForm(forms.ModelForm):
             "review": "Review",
             "date_watched": "Date Watched",
         }
+
+
+class CommentForm(forms.ModelForm):
+    """ Form to create a Comment """
+
+    class Meta:
+        model = Comment
+        fields = ["body",]
+
+        labels = {"body": "Body"}
