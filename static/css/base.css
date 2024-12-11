@@ -183,7 +183,7 @@ main {
 
 .form-button {
   padding: 8px 20px;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   border: 0;
   background-color: white;
@@ -196,7 +196,7 @@ main {
 
 .form-button:hover {
   letter-spacing: 1px;
-  background-color: #65a1c9;
+  background-color: #ff5b3c;
   color: #181818;
 }
 
@@ -365,6 +365,20 @@ main {
 
 .rating-date {
   padding: 20px 10px 10px;
+}
+
+/* Review delete page */
+.delete-review {
+  background-color: #343434;
+  color: #fdfffd;
+  margin-top: 50px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.delete-review hr {
+  margin-left: 70px;
 }
 
 /* Add comment modal */
@@ -714,6 +728,15 @@ main {
   .about-user-section {
     width: 90%;
   }
+
+  .delete-review {
+    width: 300px;
+  }
+
+  .delete-review hr {
+    margin-left: 0px;
+    width: 260px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -741,6 +764,14 @@ main {
 
   .card {
     width: 300px;
+  }
+
+  .delete-review {
+    width: 280px;
+  }
+
+  .delete-review hr {
+    width: 240px;
   }
 
 }

@@ -3,8 +3,9 @@
 {% block title %}Delete Review {{ object.film_title }}{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container delete-review text-center">
         <h1 class="text-center mt-2">Confirm Review Deletion</h1>
+        <hr class="break">
         <div class="d-flex justify-content-center pt-3">
             <form class="text-center" method="post">
                 {% csrf_token %}
