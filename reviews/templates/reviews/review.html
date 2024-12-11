@@ -6,17 +6,19 @@
 <h1 class="text-center p-2 d-block reviews-heading">
     Reviews
 </h1>
-<div class="container d-flex flex-row flex-wrap justify-content-center">
+<div class="d-flex flex-row flex-wrap justify-content-center">
     {% for review in reviews %} 
     <a href="{% url 'review_detail' review.id %}" class="review-card" aria-label="Click to view {{review.film_title}}">
         <div class="card m-3 text-center justify-content-center align-items-center">
             <div class="row">
-                <div class="col-sm-4 col-5 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-sm-4 col-md-5 d-flex align-items-center justify-content-center">
                     <img src="{{review.film_image.url}}" class="card-img-top" alt="...">
                 </div>
-                <div class="card-body col-sm-8 col-7 ">
-                <h2 class="card-title">{{review.film_title}}</h2>
-                <p class="card-text">{{review.summary|truncatechars:100}}</p>
+                <div class="card-body col-12 col-sm-8 col-md-7 ">
+                    <h2 class="card-title">{{review.film_title}}</h2>
+                    <hr class="sub-hr text-center">
+                    <p class="card-text">{{review.summary|truncatechars:100}}</p>
+                    <p class="card-user">by <strong>{{ review.user }}</strong></p>
                 </div>
             </div>
         </div>

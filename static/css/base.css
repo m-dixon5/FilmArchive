@@ -155,7 +155,8 @@ main {
 
 .footer-container {
   background-color: #232323;
-  margin: 20px 0px 30px;
+  margin-top: 30px;
+  padding: 10px 0px;
 }
 
 /* Forms */
@@ -194,8 +195,8 @@ main {
 
 /* Reviews page */
 .card {
-  width: 25rem;
-  height: 80%;
+  width: 450px;
+  height: 90%;
   margin-top: 1rem;
   background-color: #343434;
   color: #fdfffd;
@@ -203,6 +204,15 @@ main {
   font-size: 14px;
   font-weight: 100;
   box-shadow: rgba(255, 255, 255, 0.15) 0px 7px 29px 0px;
+}
+
+.card-body hr {
+  margin-left: 40px;
+}
+
+.card-user {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .reviews-heading {
@@ -221,12 +231,16 @@ main {
 } 
 
 .card-img-top {
-  height: 180px;
-  width: 120px;
+  height: 225px;
+  width: 150px;
 }
 
 .comments-container {
   height: 100px;
+}
+
+.card-text {
+  font-size: 16px;
 }
 
 /* Review Detail Pages */
@@ -662,6 +676,25 @@ main {
     width: 90%;
   }
 
+  .card-img-top {
+    margin-left: 20px;
+  }
+
+  .card-body hr {
+    margin-left: 30px;
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 300px;
+  }
+
+  .card-img-top {
+    margin: 10px 0px 0px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -686,7 +719,15 @@ main {
   .about-section hr {
     width: 150px;
   }
+
+  .card {
+    width: 300px;
+  }
 }
 
-
+@media screen and (max-width: 343px) {
+  .card {
+    width: 250px;
+  }
+}
 
