@@ -12,6 +12,24 @@ FilmArchive is a full-stack website designed to create a community amongst film 
 
 ### User Stories
 
+| User Story | Priority |
+|----------------------------------------------------------------------------------------------------------------------------|---------------|
+| As a **user**, I can view a home page so that I can see relevant information about the website and how it works. | **MUST HAVE** |
+| As a **user**, I can create an account so that I can access additional features of the website. | **MUST HAVE** |
+| As a **user**, I have access to an account page so that I can view my details, reviews I have made and my watched / want to watch lists. | **MUST HAVE** |
+| As a **user**, I have access to a reviews page so that I can see a list of all recent reviews other users have submitted. | **MUST HAVE** |
+| As a **user**, I can create a review so I can share my thoughts on a film and interact with the community. | **MUST HAVE** |
+| As a **user**, I can edit reviews I have made so that I can update any information about the film / change the review itself. | **MUST HAVE** |
+| As a **user**, I can comment on other users reviews as a way to interact with the rest of the community. | **MUST HAVE** |
+| As a **Site Owner**, I can create, read, update and delete reviews from the website in order to manage the content that is shown. | **MUST HAVE** |
+| As a **user**,  I can add films to my watch later list so that I can keep track of films I want to see. | **SHOULD HAVE** |
+| As a **user**, I can delete films from my watch later list in case I no longer want to watch them or they were added by mistake. | **SHOULD HAVE** |
+| As a **user**, films I have reviewed will be added to my watched/ reviewed list so that I can keep track of films I have already reviewed. | **COULD HAVE** |
+| As a **user**, I can remove comments made on my own reviews so that there are no unnecessary or unwanted comments. | **WONT HAVE** |
+| As a **user**, I can edit my comment on a review.  | **COULD HAVE** |
+
+
+
 ### Agile
 
 ### ERD (Database model)
