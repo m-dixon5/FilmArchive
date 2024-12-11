@@ -382,7 +382,18 @@ main {
   margin-left: 70px;
 }
 
-/* Add comment modal */
+/* Delete Comment */
+.delete-button {
+  background-color: #ff5b3c;
+  color: #131313;
+}
+
+.delete-button:hover {
+  background-color: #fdfffd;
+  color: #131313;
+}
+
+/* Add comment */
 #modal-content {
   background-color: #343434;
 }
@@ -550,6 +561,10 @@ main {
   color: #ff5b3c;
   width: 200px;
   margin: 5px 0px 15px;
+}
+
+.profile-reviews {
+  margin-bottom: 60px;
 }
 
 /* Collapse sections */
