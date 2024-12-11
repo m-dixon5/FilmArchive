@@ -49,8 +49,7 @@
         <!-- Comments -->
         <div class="row comments">
             <div class=" p-3 col-3">
-                <h2 class="content-heading">Comments</h2>
-                <hr class="sub-hr">
+                <h2 class="comments-heading">Comments</h2>
             </div>
             <div class="col-6"></div>
             <div class="col-3 add-comment">
@@ -81,15 +80,17 @@
                 </div>
             </div>
         </div>
-        <!-- Loop thorugh comments and display them -->
-        <div class="d-flex flex-row flex-wrap justify-content-center">
-            {% for comment in comments %}
-            <div class="comment-card">
-                {{ comment.body }}
-                {{ comment.user }}
+    </div>
+    <!-- Loop thorugh comments and display them -->
+    <div class="row justify-content-center">
+        {% for comment in comments %}
+        <div class="comment-card col-12 col-sm-4 col-lg-3">
+            <p class="comment-user-section">Comment by - <strong class="comment-user">{{ comment.body }}</strong></p>
+            <div>
+                <p class="comment-text">{{ comment.user }}</p>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
