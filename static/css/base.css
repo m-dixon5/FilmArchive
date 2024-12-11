@@ -151,12 +151,23 @@ main {
   height: 30px;
   width: 30px;
   margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #fdfffd;
+}
+
+.footer-icon:hover {
+  color: #ff5b3c;
 }
 
 .footer-container {
   background-color: #232323;
   margin-top: 30px;
   padding: 10px 0px;
+}
+
+.footer-container a {
+  text-decoration: none;
 }
 
 /* Forms */
