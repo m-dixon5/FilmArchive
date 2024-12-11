@@ -48,6 +48,26 @@ Before starting the project an Entity Relationship Diagram was created in order 
 
 ### Wireframes
 
+From the start I tried to keep the project layout as simple as possible, putting more emphasis on creating an easier experience for the user. Figma was used to create the wireframes which allowed me to create a more detailed picture of what each page was going to look like compared to other design sites. Furthermore, due to the detail of the wireframes created the finished project managed to look very similar to the original designs / plans.
+
+<details open>
+<summary>Mobile Wireframes</summary>
+
+![Mobile wireframes](documentation/images/Mobile-Wireframe.png)
+</details>
+
+<details open>
+<summary>Tablet Wireframes</summary>
+
+![Tablet wireframes](documentation/images/Tablet-Wireframe.png)
+</details>
+
+<details open>
+<summary>Desktop Wireframes</summary>
+
+![Desktop wireframes](documentation/images/Desktop-Wireframes.png)
+</details>
+
 ### Colours
 
 ### Font
