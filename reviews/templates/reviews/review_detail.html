@@ -67,7 +67,7 @@
                         <button type="button" class="btn-close close-modal-button" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form class="comment-form">
+                            <form action="{% url 'add_comment' review.id %}" method="post" class="comment-form">
                                 {% csrf_token %}
                                 {{ form|crispy }}
                                 <div class="text-center">

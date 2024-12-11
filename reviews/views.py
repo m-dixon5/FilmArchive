@@ -15,6 +15,7 @@ from .forms import ReviewForm, CommentForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
+from django.urls import reverse
 
 # Create your views here.
 class UserReviews(ListView):
@@ -27,15 +28,15 @@ class UserReviews(ListView):
 
 class ReviewDetail(DetailView):
     """View individual reviews in more detail"""
-
     template_name = "reviews/review_detail.html"
     model = Review
     context_object_name = "review"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # Add the comment form to the context
+        # Add the comment form and comments to the context
         context['form'] = CommentForm()
+        context['comments'] = Comment.objects.filter(review=self.object)
         return context
 
 
@@ -76,12 +77,18 @@ class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 class AddComment(LoginRequiredMixin, CreateView):
     """View to add a comment"""
-    template_name= 'reviews/review_detail.html'
+    template_name = 'reviews/review_detail.html'
     model = Comment
     form_class = CommentForm
-    success_url = '/reviews/'
 
     def form_valid(self, form):
+        # Set the review the comment belongs to
+        review = Review.objects.get(pk=self.kwargs['pk'])
+        form.instance.review = review
         form.instance.user = self.request.user
+        messages.success(self.request, 'Comment added successfully!')
         return super(AddComment, self).form_valid(form)
 
+    def get_success_url(self):
+        # Redirect back to the review detail page
+        return reverse('review_detail', kwargs={'pk': self.kwargs['pk']})
