@@ -12,6 +12,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Review, Comment
 from .forms import ReviewForm, CommentForm
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 
 # Create your views here.
@@ -47,6 +49,7 @@ class AddReview(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, 'Review added successfully!')
         return super(AddReview, self).form_valid(form)
 
 
@@ -81,5 +84,4 @@ class AddComment(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddComment, self).form_valid(form)
-
 

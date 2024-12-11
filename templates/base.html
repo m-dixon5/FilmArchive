@@ -18,6 +18,18 @@
 <body id="body">
     {% include 'includes/header.html' %}
 
+    <!-- Alert messages -->
+    <div class="container">
+        <div>
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message | safe }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
     <main>
         {% block content %}
         {% endblock %}
