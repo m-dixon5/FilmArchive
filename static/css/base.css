@@ -695,6 +695,14 @@ main {
   .card-img-top {
     margin: 10px 0px 0px;
   }
+
+  .info {
+    justify-content: center;
+  }
+
+  .about-user-section {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -723,6 +731,7 @@ main {
   .card {
     width: 300px;
   }
+
 }
 
 @media screen and (max-width: 343px) {
