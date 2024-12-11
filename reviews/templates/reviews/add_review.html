@@ -3,8 +3,8 @@
 {% block title %}Add Review{% endblock %}
 
 {% block content %}
-<div class="container">
-    <form method="POST" enctype="multipart/form-data" class="forms">
+<div class="container-sm add-review-container">
+    <form method="POST" enctype="multipart/form-data" class="forms add-review-form">
         <h1 class="text-center">Add Review</h1>
         {% csrf_token %}
         {{ form.media }}

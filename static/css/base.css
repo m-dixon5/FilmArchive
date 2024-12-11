@@ -737,6 +737,18 @@ main {
     margin-left: 0px;
     width: 260px;
   }
+
+  .add-review-form {
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: #131313;
+    box-shadow: none;
+  }
+
+  .add-review-container {
+    padding: 0px;
+    
+  }
 }
 
 @media screen and (max-width: 420px) {
