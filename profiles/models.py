@@ -38,9 +38,7 @@ class WatchLater(models.Model):
     Model for adding films to watch later list
     """
 
-    user = models.ForeignKey(
-        User, related_name="review_author", on_delete=models.CASCADE
-    )
+    user = models.ForeignKey(User, related_name="user_watch_list", on_delete=models.CASCADE)
     film_title = models.CharField(max_length=100, null=False, blank=False)
     film_image = ResizedImageField(
         size=(300, 450),
@@ -50,6 +48,7 @@ class WatchLater(models.Model):
         blank=False,
         null=False,
     )
+    date_added = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
         return str(self.title)
