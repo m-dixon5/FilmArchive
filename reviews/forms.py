@@ -29,7 +29,7 @@ class ReviewForm(forms.ModelForm):
             "film_rating": "Rating",
             "summary": "Review Summary",
             "review": "Review",
-            "date_watched": "Date Watched",
+            "date_watched": "Date Watched (dd/mm/yyyy)",
         }
 
 
