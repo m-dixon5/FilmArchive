@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AddReview, UserReviews, ReviewDetail, DeleteReview, EditReview, AddComment
+from .views import AddReview, UserReviews, ReviewDetail, DeleteReview, EditReview, AddComment, DeleteComment
 
 
 urlpatterns = [
@@ -9,4 +9,5 @@ urlpatterns = [
     path("delete/<slug:pk>/", DeleteReview.as_view(), name="delete_review"),
     path("edit/<slug:pk>/", EditReview.as_view(), name="edit_review"),
     path("<slug:pk>/comment", AddComment.as_view(), name="add_comment"),
+    path("comment/delete/<slug:pk>/", DeleteComment.as_view(), name="comment_delete")
 ]

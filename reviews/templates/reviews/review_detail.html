@@ -54,9 +54,11 @@
             <div class="col-6"></div>
             <div class="col-3 add-comment">
                 <!-- Button trigger modal -->
+                {% if user.is_authenticated %}
                 <button type="button" class="add-comment-button" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Add a comment">
                     <i class="fa-solid fa-plus"></i>
                 </button>
+                {% endif %}
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-large">
@@ -86,7 +88,11 @@
         {% for comment in comments %}
         <div class="comment-card col-12 col-sm-4 col-lg-3">
             <div class="comment-container">
-                
+                {% if request.user == comment.user %}
+                <div class="delete-comment-section">
+                    <a href="{% url 'comment_delete' comment.id %}" alt="Delete this comment"><i class="fa-solid fa-trash"></i></a>
+                </div>
+                {% endif %}
                 <div class="comment-body">
                     <p class="comment-text">{{ comment.body }}</p>
                 </div>

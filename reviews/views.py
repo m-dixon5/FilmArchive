@@ -92,3 +92,19 @@ class AddComment(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         # Redirect back to the review detail page
         return reverse('review_detail', kwargs={'pk': self.kwargs['pk']})
+
+
+class DeleteComment(DeleteView):
+    """ View to delete a comment """
+    template_name = 'reviews/delete_comment.html'
+    model = Comment
+    success_url = '/reviews/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().name
+
+    def delete(self, request):
+        comment = self.get_object()
+        comment.delete()
+        messages.success(request, "Comment has been deleted.")
+        return HttpResponseRedirect(self.success_url)
