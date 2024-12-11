@@ -41,7 +41,7 @@ class Review(models.Model):
         ordering = ["-posted_on"]
 
     def __str__(self):
-        return str(self.title)
+        return str(self.film_title)
 
     def clean(self):
         super().clean()
