@@ -38,7 +38,11 @@ Project Board - [link](https://github.com/users/m-dixon5/projects/3)
 
 ![FilmArchive Project Board](documentation/images/project-board.jpg)
 
-### ERD (Database model)
+### Entity Relationship Digram
+
+Before starting the project an Entity Relationship Diagram was created in order to map out the database and to visualise how each table would interact with one another. I first created each table with all the neccessary key and field pairs using pen and paper. After I was happy that all fields and models were covered I moved on to determining the relationship each table had with another. To finalise everything I converted everything I had written down into Lucid Chart (see images below).
+
+![Entity Relationship Diagram](documentation/images//ERD.png)
 
 ## Design
 
