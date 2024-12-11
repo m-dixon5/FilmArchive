@@ -345,7 +345,6 @@ main {
 
 .rating-score {
   padding: 0px 10px;
-  background-color: #3fd56f;
   border-radius: 5px;
 }
 
@@ -471,11 +470,14 @@ main {
   width: 400px;
 }
 
-.comment-card div {
-  background-color: #535353;
+.comment-body {
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
+}
+
+.comment-div hr {
+  width: 250px;
 }
 
 .comment-user-section {

@@ -85,9 +85,15 @@
     <div class="row justify-content-center">
         {% for comment in comments %}
         <div class="comment-card col-12 col-sm-4 col-lg-3">
-            <p class="comment-user-section">Comment by - <strong class="comment-user">{{ comment.body }}</strong></p>
-            <div>
-                <p class="comment-text">{{ comment.user }}</p>
+            <div class="comment-container">
+                
+                <div class="comment-body">
+                    <p class="comment-text">{{ comment.body }}</p>
+                </div>
+                <div class="text-end d-flex align-items-end flex-column comment-div">
+                    <hr class="sub-hr">
+                    <p class="comment-user-section">Comment by - <strong class="comment-user">{{ comment.user }}</strong></p>
+                </div>
             </div>
         </div>
         {% endfor %}
