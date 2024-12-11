@@ -30,7 +30,13 @@ FilmArchive is a full-stack website designed to create a community amongst film 
 
 
 
-### Agile
+### Agile and MoSCoW Prioritization
+
+Throughout the process of creating the project Agile planning methods were used. Using a GitHub project board I was able to map out the website features / user stories. In addition, the tasks were placed into one of three categories : Todo, In Progess and Done which allowed me track each task. This in turn gave me a good reference point for the overall progression of the project at different stages, which I found useful. MoSCoW Prioritization was used alongside this to split up tasks / user stories into either : Must Have, Should Have, Could Have or Won't have. This allowed for a clearer plan and to understand what tasks needed to be completed in order to achieve the MVP.
+
+Project Board - [link](https://github.com/users/m-dixon5/projects/3)
+
+![FilmArchive Project Board](documentation/images/project-board.jpg)
 
 ### ERD (Database model)
 
