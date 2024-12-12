@@ -300,6 +300,16 @@ Testing both the reviews and home page on desktop and mobile sizes the lighthous
 
 ### WAVE Accessibility Test
 
+WAVE was also used to further test the websites accessibility :
+
+<details open>
+<summary>WAVE Accessibility</summary>
+
+![>WAVE Accessibility](documentation/images/wave-accessibility.png)
+</details>
+
+
+
 ### Manual Testing
 
 | Feature                    | Tested?  | User Input Required | User Feedback Provided     | Pass/Fail | Fix |
@@ -389,9 +399,7 @@ The steps for deploying the project with Heroku are as follows :
 
 - Be able to create a thread in the comments section of each review to further enchance interactivity between users. This would allow multiple discussions to take place under any one post / review.
 
-## Frameworks and Technologies
-
-### Languages
+## Languages
 
 - HTML
 
@@ -401,7 +409,7 @@ The steps for deploying the project with Heroku are as follows :
 
 - Python
 
-### Technologies
+## Technologies
 
 - [Figma](https://www.figma.com/) for wireframe creation.
 
@@ -429,3 +437,15 @@ The steps for deploying the project with Heroku are as follows :
 
 
 ## Credits
+
+- [amylour](https://github.com/amylour) and [FreeFido_v2](https://github.com/amylour/FreeFido_v2) for guidance throughout the project and inspiration on the README layout (especially the testing section)
+
+- [Dee Mc](https://www.youtube.com/@IonaFrisbee) for the django walkthrough which expanded my knowledge on how to use the django framework.
+
+- [W3schools](https://www.w3schools.com/howto/howto_js_collapsible.asp) - collapse sections 
+
+- [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp) - edit modal for profile
+
+- [geeksforgeeks](https://www.geeksforgeeks.org/limit-the-maximum-value-of-a-numeric-field-in-a-django-model/ ) - help with min and max fields.
+
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
