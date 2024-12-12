@@ -43,3 +43,15 @@ class WatchLaterAdd(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
         messages.success(self.request, "Added film to Watch Later")
         return super(WatchLaterAdd, self).form_valid(form)
+
+
+class EditWatchLater(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """Edit Watch Later list item"""
+
+    template_name = "profiles/edit_watch_later.html"
+    model = WatchLater
+    form_class = WatcherLaterForm
+    success_url = "/reviews/"
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
