@@ -271,6 +271,16 @@ Testing both the reviews and home page on desktop and mobile sizes the lighthous
 
 ## Future Features
 
+- Adding a film API that allows users to search for any film on an external database. This in turn would make it much quicker for users to review a film or add one to watch later as they are not required to input the information themselves. 
+
+- Implementing a refine search to the reviews section that would allow users to search for reviews based on different criteria and tags associated with reviews.
+
+- Ability to search or view other users profiles to see their reviews or watch later lists.
+
+- Add a review count on each review / post so users are able to see how many times their post has been viewed. This could also link well with the refine search where users can filter by most popular reviews.
+
+- Be able to create a thread in the comments section of each review to further enchance interactivity between users. This would allow multiple discussions to take place under any one post / review.
+
 ## Frameworks and Technologies
 
 ## Credits
