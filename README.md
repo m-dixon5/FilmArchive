@@ -1,5 +1,7 @@
 # FilmArchive
 
+![FilmArchive main image](documentation/images/main-image.png)
+
 - Deployed Link - 
 
 ## Contents
