@@ -111,19 +111,19 @@
 {{ block.super }}
 <script  type="text/javascript">
     const ratingBox = document.getElementById("rating-box");
-    let value = "{{ review.film_rating }}"
+    let value = "{{ review.film_rating }}";
 
     if (value < 4) {
-        ratingBox.style.backgroundColor = "#FF6D4B"
+        ratingBox.style.backgroundColor = "#FF6D4B";
     }
     else if (value >= 4 && value < 6) {
-        ratingBox.style.backgroundColor = "#FFC847"
+        ratingBox.style.backgroundColor = "#FFC847";
     }
     else if (value >= 6 && value < 8) {
-        ratingBox.style.backgroundColor = "#3FD56F"
+        ratingBox.style.backgroundColor = "#3FD56F";
     }
     else {
-        ratingBox.style.backgroundColor = "#3FD56F"
+        ratingBox.style.backgroundColor = "#3FD56F";
     }
     
     
