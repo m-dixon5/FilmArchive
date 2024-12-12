@@ -8,7 +8,7 @@
     <div class="profile">
         <div class="info row">
             <div class="profile-img-section col-12 col-md-4">
-                {% if profile.img.url is not none %}
+                {% if profile.image.url is not none %}
                 <img src="{{ profile.image.url }}" alt="{{ profile.user.username }}'s profile image" class="profile-img">
                 {% else %}
                 <img src="{% static '/images/nobody.webp' %}" alt="Profile Image none icon" class="profile-img">
@@ -41,7 +41,7 @@
                     <h3 class="text-center film-card-title">{{ item.film_title }}</h3>
                     {% if request.user == profile.user %}
                     <div class="icons-section">
-                        <a href="" class="watch-later-icon" aria-label="Edit film"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="{% url 'edit_watch_later' request.user.id %}" class="watch-later-icon" aria-label="Edit film"><i class="fa-solid fa-pen-to-square"></i></a>
                         <a href="" class="watch-later-icon" aria-label="Delete film from watch later list"><i class="fa-solid fa-trash"></i></a>
                     </div>
                     {% endif %}
