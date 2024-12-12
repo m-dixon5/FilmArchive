@@ -35,10 +35,16 @@
         <div class="content">  
             <div class="profile-reviews row justify-content-center text-center">
                 {% for item in profile.user.user_watch_list.all %}
-                <div>
-                    <a href="">
-                        <img src="{{ item.film_image }}" class="account-film-img" alt="{{ item.film_title }} image in watch later list">
-                    </a>
+                <div class="review-account-card col-6 col-md-3 col-xl-2">
+                    <img src="{{ item.film_image.url }}" class="account-film-img" alt="{{ item.film_title }} image in watch later list">
+                    <hr class="film-card-break">
+                    <h3 class="text-center film-card-title">{{ item.film_title }}</h3>
+                    {% if request.user == profile.user %}
+                    <div class="icons-section">
+                        <a href="" class="watch-later-icon" aria-label="Edit film"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="" class="watch-later-icon" aria-label="Delete film from watch later list"><i class="fa-solid fa-trash"></i></a>
+                    </div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
