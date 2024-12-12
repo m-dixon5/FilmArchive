@@ -4,6 +4,41 @@
 
 ## Contents
 
+- [FilmArchive](#FilmArchive)
+    - [Contents](#Contents)
+    - [Overview](#Overview)
+- [User Experience](#User-Experience-(UX))
+    - [User Stories](#User-Stories)
+    - [Agile and MoSCoW Prioritization](#agile-and-moscow-prioritization)
+    - [Entity Relationship Diagram](#entity-relationship-digram)
+- [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Colours](#colours)
+    - [Colour Accessibility](#colour-accessibility)
+    - [Font](#font)
+- [Features](#features)
+    - [Header / Navigation](#header--navigation)
+    - [Footer](#footer)
+    - [Home Page](#home-page)
+    - [Reviews](#reviews)
+    - [Review Detail](#review-detail)
+    - [Add Reviews](#add-reviews)
+    - [Sign Up](#sign-up)
+    - [Profile](#profile)
+- [Testing](#testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [Python Vaidation](#python-validation)
+    - [JavaScript Validation](#javascript-validation)
+    - [Lighthouse Test](#lighthouse-test)
+    - [WAVE Accessibility Test](#wave-accessibility-test)
+- [Deployment](#deployment)
+- [Bugs](#bugs)
+- [Future Features](#future-features)
+- [Frameworks and Technologies](#frameworks-and-technologies)
+- [Credits](#credits)
+
+
 ## Overview
 
 FilmArchive is a full-stack website designed to create a community amongst film lovers and enthusiasts. The project is centered around the review and comment functionality which was the initial idea for the project. The reviews aspect of the project allows users to create a review on any film of their choosing and share it. Users are also able to comment on any reviews they find interesting as a way to interact with others. Each user has access to a profile which they are able to add an avatar and a bio. The profile is also a location where users are able to see the reviews they have made as well as their watch later section. By default reviews are saved to the users profile allowing them to easily be managed and acts as a way to track films that have been watched. Furthermore, films can be added to a watch later list if users see any films that peak their interest and want to remember them for the next time they are looking for a film to watch.
@@ -134,7 +169,7 @@ The home page consists of a hero section, about section and four info cards. The
 
 All user reviews are displayed in the reviews section with each review given its own card. The cards display the film image, film title, user and a short summary of the user review that is limited to 100 characters. Each card acts as a link and opens up the full review page when clicked. Cards are also responsive at all screen sizes by using bootstrap rows and columns.
 
-## Review Detail
+### Review Detail
 
 <details open>
 <summary>Review Detail Image</summary>
