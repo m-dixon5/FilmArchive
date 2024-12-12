@@ -152,11 +152,35 @@ After clicking on a review card from the reviews page each review opens up in mo
 ![Add Review Page Image](documentation/images/add-review.png)
 </details>
 
-The Add review form utilises crispy forms and allows uses to input all the detials on the film they want to review. A RichTextField was also used for the main review input to allow users to add additional styles and manipulate the layout. Cloudinary was used also to allow users to upload their film images and store them. Lastly, the review summary input uses django max and min validators meaning the user cannot enter a value that is outside the range of 0 to 10.
+The Add review form utilises crispy forms and allows uses to input all the details on the film they want to review. A RichTextField was also used for the main review input to allow users to add additional styles and manipulate the layout. Cloudinary was used also to allow users to upload their film images and store them. Lastly, the review summary input uses django max and min validators meaning the user cannot enter a value that is outside the range of 0 to 10.
 
-### Register
+### Sign Up
+
+<details open>
+<summary>Sign Up Page Image</summary>
+
+![Sign Up Page Image](documentation/images/sign-up-page.png)
+</details>
+
+The sign up page form follows the basic design of the majority of the input forms across the website. Django AllAuth  was used to provide user authentication and the basic templates. In addition, the form provides user feedback if email and password fields are inputted incorrectly . An image of this can be seen below.
+
+<details open>
+<summary>Sign Up Error</summary>
+
+![Sign Up Error](documentation/images/sign-up-error.png)
+</details>
 
 ### Profile 
+
+<details open>
+<summary>Profile Page Image</summary>
+
+![Profile Page Image](documentation/images/profile-image.png)
+
+The Profile page starts out as a blank canvas and allows the user to add an avatar and a bio through a modal that appears after the edit button is clicked. Reviews that have been made by the user can be seen in the dropdown menu and link to the detailed view. The watch later feature is also located in the profile with the user being able to add a film by clicking the button whicht takes them to a seperate page. Users can also see how many films have either been reviewed or added to the watch later section next to their respective titles.
+
+</details>
+
 
 ## Testing
 
