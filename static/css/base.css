@@ -224,6 +224,10 @@ main {
   box-shadow: rgba(255, 255, 255, 0.15) 0px 7px 29px 0px;
 }
 
+.card:hover {
+  border: 1px solid #ff5b3c;
+}
+
 .card-body hr {
   margin-left: 40px;
 }
