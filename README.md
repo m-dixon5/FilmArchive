@@ -187,6 +187,8 @@ The Profile page starts out as a blank canvas and allows the user to add an avat
 
 To validate my HTML files I used the validator provided by W3C and inputted the code via direct input. The code was copied from the page source instead of the workspace due to django template language being present on all pages.
 
+Most pages returned no errors or warnings apart from one or two. A common error was a button being located inside an anchor tag which was found across two pages. All fixes were simple enough and didn't cause too much hassle.
+
 <details open>
 <summary>HTML Validation Image</summary>
 
