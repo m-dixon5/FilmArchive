@@ -126,7 +126,33 @@ The home page consists of a hero section, about section and four info cards. The
 
 ### Reviews
 
+<details open>
+<summary>Reviews Page Image</summary>
+
+![Reviews Page Image](documentation/images/reviews-page.png)
+</details>
+
+All user reviews are displayed in the reviews section with each review given its own card. The cards display the film image, film title, user and a short summary of the user review that is limited to 100 characters. Each card acts as a link and opens up the full review page when clicked. Cards are also responsive at all screen sizes by using bootstrap rows and columns.
+
+## Review Detail
+
+<details open>
+<summary>Review Detail Image</summary>
+
+![Review Detail Image](documentation/images/review-detail.png)
+</details>
+
+After clicking on a review card from the reviews page each review opens up in more detail with the full review, rating and date watched being displayed. JavaScript was included which alters the background colour of the rating depending on how high the user scored the film. For films below 4 the background colour is red, between 4 and 6 orange, between 6 and 8 light green and above 8 a darker green. The comments section was placed below the review card and the add button is available for users who have a registered account.
+
 ### Add Reviews
+
+<details open>
+<summary>Add Review Page Image</summary>
+
+![Add Review Page Image](documentation/images/add-review.png)
+</details>
+
+The Add review form utilises crispy forms and allows uses to input all the detials on the film they want to review. A RichTextField was also used for the main review input to allow users to add additional styles and manipulate the layout. Cloudinary was used also to allow users to upload their film images and store them. Lastly, the review summary input uses django max and min validators meaning the user cannot enter a value that is outside the range of 0 to 10.
 
 ### Register
 
