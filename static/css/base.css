@@ -579,19 +579,6 @@ main {
   margin-bottom: 60px;
 }
 
-.watch-later-button {
-  margin-right: 15px;
-}
-
-.watch-later-icon {
-  margin: 10px 20px;
-  font-size: 20px;
-}
-
-.icons-section {
-  margin: 5px 10px;
-}
-
 /* Collapse sections */
 .collapsible {
   background-color: #343434;

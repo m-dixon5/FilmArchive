@@ -25,29 +25,8 @@
         </div>
         <div class="text-md-end">
             {% if request.user == profile.user %}
-            <a href="{% url 'add_watchlater' request.user.id %}" class="btn form-button watch-later-button">Add to Watch Later</a>
             <button id="myBtn" class="form-button mb-4">Edit</button>
             {% endif %}
-        </div>
-
-        <!-- Watch Later section -->
-        <button type="button" class="collapsible">Watch Later <span class="fs-6">({{ profile.user.user_watch_list.count }})</span></button>
-        <div class="content">  
-            <div class="profile-reviews row justify-content-center text-center">
-                {% for item in profile.user.user_watch_list.all %}
-                <div class="review-account-card col-6 col-md-3 col-xl-2">
-                    <img src="{{ item.film_image.url }}" class="account-film-img" alt="{{ item.film_title }} image in watch later list">
-                    <hr class="film-card-break">
-                    <h3 class="text-center film-card-title">{{ item.film_title }}</h3>
-                    {% if request.user == profile.user %}
-                    <div class="icons-section">
-                        <a href="{% url 'edit_watch_later' request.user.id %}" class="watch-later-icon" aria-label="Edit film"><i class="fa-solid fa-pen-to-square"></i></a>
-                        <a href="" class="watch-later-icon" aria-label="Delete film from watch later list"><i class="fa-solid fa-trash"></i></a>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
         </div>
         <!-- Reviews section -->
         <button type="button" class="collapsible">Reviews <span class="fs-6">({{ profile.user.review_author.count }})</span></button>
