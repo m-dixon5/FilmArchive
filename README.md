@@ -322,7 +322,37 @@ Testing both the reviews and home page on desktop and mobile sizes the lighthous
 | Sign Up | Yes | Email/Password/Text fields |All fields provide correct feed back if left blank or formatted incorrectly. User will also be informed if passwords don't match. | Pass | - |
 | Footer Icons | Yes | Click and hover | All icons take the user to the correct website in a new tab and change style to indicate they can be clicked.| Pass | - |
 
+### Browser Compatibility
+
+The website was tested across four different web browsers which were : Firefox, Edge , Safari and Chrome. All features were tested on each browser with no issues to styles or formatting. 
+
 ## Deployment
+
+The steps for deploying the project with Heroku are as follows : 
+
+- Sign up / in to Heroku and head to the dashboard section.
+
+- Locate the new button towards the top right and 'Create New App'.
+
+- Select the region closest to your location and fill in the project name.
+
+- Once you have created the app navigate to the settings tab to find config vars. Click on the area to reveal them and input the necessary key-value pairs.
+
+- The key-pair values you will need are your : CLOUDINARY_URL, SECRET_KEY, DATABASE_URL, DISABLE_COLLECTSTATIC (Removed when project static files are created) and PORT:8000 (for running the server from your workspace).
+
+- Make sure the Heroku app name is added to ALLOWED_HOSTS in settings.py.
+
+- Ensure DEBUG is set to false and the requirements.txt folder is up to date using "pip3 freeze --local > requirements.txt".
+
+- Commit any changes to GitHub before continuing.
+
+- Head back to Heroku and find the deploy tab.
+
+- Select GitHub as the deployment method, link your account and search for the repository you would like to connect.
+
+- After everything is connected and the app is built you can head to manually deploy and click "Deploy branch".
+
+- The view button will appear after everything has loaded which will allow you to see the deployed project. Any errors will be shown as soon as the program catches them and they can be viewed in the console.
 
 ## Bugs
 
