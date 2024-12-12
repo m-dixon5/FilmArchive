@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Watch Later{% endblock %}
+
+{% block content %}
+<div class="container-sm add-review-container">
+    <form method="POST" enctype="multipart/form-data" class="forms add-review-form">
+        <h1 class="text-center">Add Film to Watch Later</h1>
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form|crispy }}
+        <div class="text-center">
+            <button type="submit" class="form-button">Watch Later</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
