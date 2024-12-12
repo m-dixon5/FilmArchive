@@ -40,6 +40,7 @@ body {
   background-image: url('../images/4fxxbm4opjd31.webp');
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.5) 0px 7px 29px 0px;
+  height: 455px;
 }
 
 
@@ -119,6 +120,7 @@ body {
   margin-top: 60px;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
 }
 
 /* Navbar */
