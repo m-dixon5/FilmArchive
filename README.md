@@ -224,6 +224,15 @@ To validate my css file I used W3C CSS Validator. Orginally there were 2 errors 
 
 ### Python Validation
 
+Python validation was completed using [CI Python Linter](https://pep8ci.herokuapp.com/#) which presented a couple small issues across different files. These issues mainly being empty lines at the end and a couple lines running over the character limit. Throughout the project the python black module was used on the files to try and keep everything up to date.
+
+| Feature | admin.py | forms.py | models.py | urls.py | views.py |
+|---------|----------|----------|-----------|---------|----------|
+| Home | no errors | no errors | no errors | no errors | no errors |
+| Profiles  | no errors | no errors | no errors | no errors | no errors |
+| Reviews | no errors | no errors | no erros | no errors | no errors |
+| Project App | na | na| na | no errors | na |
+
 ### JavaScript Validation
 
 ### Lighthouse Test
