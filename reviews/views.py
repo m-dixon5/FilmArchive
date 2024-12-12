@@ -66,7 +66,12 @@ class EditReview(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
-
+    
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        messages.success(self.request, 'Review has been updated')
+        return super().form_valid(form)
+        
 
 class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete a review"""
