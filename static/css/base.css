@@ -249,7 +249,7 @@ main {
 
 .card-title {
   font-size: 18px;
-  font-weight: 2000;
+  font-weight: 600;
 } 
 
 .card-img-top {
@@ -683,10 +683,6 @@ main {
 
   .review-container {
     flex-direction: row;
-  }
-
-  .rating-container {
-    text-align: none;
   }
 
   .date-watched {
