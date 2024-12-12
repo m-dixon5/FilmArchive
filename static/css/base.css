@@ -357,6 +357,7 @@ main {
 .rating-score {
   padding: 0px 10px;
   border-radius: 5px;
+  color: #131313;
 }
 
 .rating-container {
