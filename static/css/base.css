@@ -164,12 +164,13 @@ main {
 
 .footer-icon:hover {
   color: #ff5b3c;
+  font-size: 35px;
 }
 
 .footer-container {
   background-color: #232323;
   margin-top: 30px;
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 .footer-container a {
