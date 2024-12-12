@@ -324,7 +324,23 @@ Testing both the reviews and home page on desktop and mobile sizes the lighthous
 
 ### Browser Compatibility
 
-The website was tested across four different web browsers which were : Firefox, Edge , Safari and Chrome. All features were tested on each browser with no issues to styles or formatting. 
+The website was tested across four different web browsers which were : Firefox, Edge , Safari and Chrome. All features were tested on each browser with no issues to styles or formatting.
+
+### User Story Tests
+
+
+| User Story                 | Acceptance Criteria Met?  | Tested | Response     | Pass/Fail | Fix     |
+|----------------------------|---------------------------|--------|--------------|-----------|---------|
+| #1 - Home page             | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #2 - Reviews Rage          | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #3 - Create a review       | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #4 - Edit Review           | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #5 - Register an Account   | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #6 - Add Film To Reviewed List | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #7 - Account Page          | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #8 - Manage Reviews        | Yes                       | Yes    | No issues    | Pass      |    -    |
+| #9 - Add Comments to Review | Yes                       | Yes    | No issues    | Pass      |    -    |
+
 
 ## Deployment
 
@@ -356,6 +372,11 @@ The steps for deploying the project with Heroku are as follows :
 
 ## Bugs
 
+| Bug | Solved | Fix | 
+| ---------------- | ---- | ------------- |
+| Error when saving profiles model due to conflicts between migrations| yes | Reverted profiles app migrations back to zero and ran migrations again |
+| Success messages not rendering after submitting a form | yes | Moving the message.success above the return line in the function |
+
 ## Future Features
 
 - Adding a film API that allows users to search for any film on an external database. This in turn would make it much quicker for users to review a film or add one to watch later as they are not required to input the information themselves. 
@@ -369,5 +390,42 @@ The steps for deploying the project with Heroku are as follows :
 - Be able to create a thread in the comments section of each review to further enchance interactivity between users. This would allow multiple discussions to take place under any one post / review.
 
 ## Frameworks and Technologies
+
+### Languages
+
+- HTML
+
+- CSS
+
+- JavaScript
+
+- Python
+
+### Technologies
+
+- [Figma](https://www.figma.com/) for wireframe creation.
+
+- [Lucid Chart](https://www.lucidchart.com/pages/) to create Entity Relationship Diagram.
+
+- [Cloudinary](https://cloudinary.com/home) to store any images uploaded to the website.
+
+- [Heroku](https://www.heroku.com/) for project deployment.
+
+- [Coolors](https://coolors.co/) to create the website colour palette.
+
+- [Logo.com](https://logo.com/) used to generate logo ideas for the website.
+
+- [GitHub](https://github.com/) for version control and storage of the project.
+
+- [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) to check for any contrast errors between colours.
+
+- [Convertio](https://convertio.co/) to convert image format to WEBP.
+
+- [Fontawesome](https://fontawesome.com/) for all icons used throughout the project.
+
+- [ChatGPT](https://openai.com/index/chatgpt/) to create content for the reviews
+
+- [Perplexity](https://www.perplexity.ai/) for help with code formatting and a small amount of javascript
+
 
 ## Credits
