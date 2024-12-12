@@ -176,17 +176,49 @@ The sign up page form follows the basic design of the majority of the input form
 <summary>Profile Page Image</summary>
 
 ![Profile Page Image](documentation/images/profile-image.png)
-
-The Profile page starts out as a blank canvas and allows the user to add an avatar and a bio through a modal that appears after the edit button is clicked. Reviews that have been made by the user can be seen in the dropdown menu and link to the detailed view. The watch later feature is also located in the profile with the user being able to add a film by clicking the button whicht takes them to a seperate page. Users can also see how many films have either been reviewed or added to the watch later section next to their respective titles.
-
 </details>
+
+The Profile page starts out as a blank canvas and allows the user to add an avatar and a bio through a modal that appears after the edit button is clicked. Reviews that have been made by the user can be seen in the dropdown menu and link to the detailed view. The watch later feature is also located in the profile with the user being able to add a film by clicking the button which takes them to a seperate page. Users can also see how many films have either been reviewed or added to the watch later section next to their respective titles.
 
 
 ## Testing
 
 ### HTML Validation
 
+To validate my HTML files I used the validator provided by W3C and inputted the code via direct input. The code was copied from the page source instead of the workspace due to django template language being present on all pages.
+
+<details open>
+<summary>HTML Validation Image</summary>
+
+![HTML Validation Image](documentation/images/home-page-validation.png)
+</details>
+
+| HTML Source Code/Page | Errors | Warnings |
+| ---- | ------ | -------- | 
+| Home | 0 | 0 |
+| Sign In | 0 | 0 |
+| Sign Up | 0 | 0 |
+| Profile | 0 | 0 |
+| Edit Profile Modal | 0 | 0 |
+| Reviews Page | 0 | 0 |
+| Add Review | 0 | 0 |
+| Review Detail | 0 | 0 |
+| Edit Review | 0 | 0 |
+| Delete Review | 0 | 0 |
+| Delete Comment | 0 | 0 |
+| Add to Watch Later | 0 | 0 |
+| Edit Watch Later Item | 0 | 0 |
+| Delete Watch Later Item | 0 | 0 |
+
 ### CSS Validation
+
+To validate my css file I used W3C CSS Validator. Orginally there were 2 errors relating to an incorrect font-weight value and a style that could not be set to none. These were quick fixes and after running the code again all errors had cleared. However, there are still 4 warnings present that relate to styles applied to scroll bars.
+
+<details open>
+<summary>CSS Validation Image</summary>
+
+![CSS Validation Image](documentation/images/css-validation.png)
+</details>
 
 ### Python Validation
 
