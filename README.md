@@ -237,6 +237,32 @@ Python validation was completed using [CI Python Linter](https://pep8ci.herokuap
 
 ### Lighthouse Test
 
+Testing both the reviews and home page on desktop and mobile sizes the lighthouse scores for the project were all around pretty good. All the images used for the website are WEBP or were converted to WEBP using Convertio to get the highest scores possible. A few issues that cropped up were related to the hero section and the logo not being sized correctly.
+
+<details open>
+<summary>Lighthouse Home Page - Desktop</summary>
+
+![Lighthouse Home Page - Desktop](documentation/images/desktop-home-lighthouse.png)
+</details>
+
+<details open>
+<summary>Lighthouse Reviews Page - Desktop</summary>
+
+![Lighthouse Reviews Page - Desktop](documentation/images/desktop-reviews-lighthouse.png)
+</details>
+
+<details open>
+<summary>Lighthouse Home Page - Mobile</summary>
+
+![Lighthouse Home Page - Mobile](documentation/images/mobile-home-lighthouse.png)
+</details>
+
+<details open>
+<summary>Lighthouse Reviews Page - Mobile</summary>
+
+![Lighthouse Reviews Page - Mobile](documentation/images/mobile-reviews-lighthouse.png)
+</details>
+
 ### WAVE Accessibility Test
 
 ## Deployment
