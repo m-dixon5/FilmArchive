@@ -263,12 +263,26 @@ Python validation was completed using [CI Python Linter](https://pep8ci.herokuap
 
 | Feature | admin.py | forms.py | models.py | urls.py | views.py |
 |---------|----------|----------|-----------|---------|----------|
-| Home | no errors | no errors | no errors | no errors | no errors |
+| Home | na | na | na | no errors | no errors |
 | Profiles  | no errors | no errors | no errors | no errors | no errors |
 | Reviews | no errors | no errors | no erros | no errors | no errors |
 | Project App | na | na| na | no errors | na |
 
 ### JavaScript Validation
+
+The project only uses a small amount of javascript code and to test this I used jshint. There are a few warnings present but no major errors were pulled up.
+
+<details open>
+<summary>JavaScript Validation Image</summary>
+
+![JS Validation Image](documentation/images/JS-validation.png)
+</details>
+
+<details open>
+<summary>JavaScript Validation Image 2</summary>
+
+![JS Validation Image 2](documentation/images/JS-validation2.png)
+</details>
 
 ### Lighthouse Test
 
@@ -335,6 +349,22 @@ WAVE was also used to further test the websites accessibility :
 ### Browser Compatibility
 
 The website was tested across four different web browsers which were : Firefox, Edge , Safari and Chrome. All features were tested on each browser with no issues to styles or formatting.
+
+### Responsivity
+
+Real world testing was completed on :
+
+- iPhone 11 Pro Max
+- Google Pixel 7
+- iPad Pro
+
+Across all devices there were no issues present with responsivity or how the website was displayed.
+
+Dev tools were also used throughout the whole process of building the website and to check for responsivity I mainly refered to these devices :
+
+- iPhone 12 Pro
+- iPad Pro 
+- Nest Hub
 
 ### User Story Tests
 
