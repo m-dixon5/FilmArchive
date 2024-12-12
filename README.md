@@ -70,9 +70,22 @@ From the start I tried to keep the project layout as simple as possible, putting
 
 ### Colours
 
-### Font
+![Colour Palette](documentation/images/colour-palette.png)
 
-### Accessibility
+Simililar to the layout and structure of the site I kept the number of colours I used for the project to a minimum. The logo was created initially and determined the colours I finally choose for the website. Shades of grey / black make up the majority of the palette and were used for different layers / feature backgrounds and a shade of white was used for the majority of the text. The final colour of red was used throughout the website to highlight or break up certain features.
+
+### Colour Accessibility
+
+All colour pairings were checked using Adobe Color Contrast Checker :
+
+![Contrast check image 1](documentation/images/black-white-contrast2.png)
+
+![Contrast check image 2](documentation/images/red-black-contrast.png)
+
+![Contrast check image 3](documentation/images/black-white-contrast.png)
+
+
+### Font
 
 ## Features
 
