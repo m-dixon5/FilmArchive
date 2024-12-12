@@ -300,6 +300,28 @@ Testing both the reviews and home page on desktop and mobile sizes the lighthous
 
 ### WAVE Accessibility Test
 
+### Manual Testing
+
+| Feature                    | Tested?  | User Input Required | User Feedback Provided     | Pass/Fail | Fix |
+|----------------------------|----------|---------------------|----------------------------|-----------|-----|
+| Navbar Elements | Yes | Click | All elements link correctly to their respective page | Pass | - |
+| Hero Sign Up Button | Yes | Click | A user who is not currently signed in is taken to the sign up page | Pass | - |
+| Edit Review | Yes | Click | Only user matching review can see edit button and is taken to the correct page after clicking | Pass | - |
+| Delete Review | Yes | Click | Only user matching review can see Delete button and is taken to the correct page after clicking | Pass | - |
+| Confirm Review Changes | Yes | Click | User is taken back to the reviews page and shown a message to confirm the changes have been made | Pass | - |
+| Confirm Review Deletion | Yes | Click |  User is taken back to the reviews page and shown a message to confirm that the review has been deleted | Pass | - |
+| Add Comments modal | Yes | Click | Add button is visible for logged in users and when clicked opens the modal to add a comment | Pass | - |
+| Add Comment | Yes | Click and text input | User is able to input their comment and after clicking add are taken back to the review and informed that their comment has been added | Pass | - |
+| Delete Comment | Yes | Click | Delete icon is only visible to the user who made it and upon clicking are taken to the confirm delete page | Pass | - |
+| Confirm Delete Comment | Yes | Click |  | Pass | - |
+| Add Review | Yes | Image/Text/RichText/DateTime/Decimal fields | All required fields cannot be blank and provide feedback if left blank | Pass | - |
+| Edit Profile Button | Yes | Click | On click the edit profile modal is opened | Pass | - |
+| Edit Profile | Yes | Edit Image/RichText fields | Image is prepopulated so no input required and bio can also be left empty | Pass | - |
+| Logout | Yes | Click | User is taken to home screen and shown a message to confirm they have been logged out . | Pass | - |
+| Sign In | Yes | Email/Password/Text fields | All fields provide correct feed back if left blank or formatted incorrectly | Pass | - |
+| Sign Up | Yes | Email/Password/Text fields |All fields provide correct feed back if left blank or formatted incorrectly. User will also be informed if passwords don't match. | Pass | - |
+| Footer Icons | Yes | Click and hover | All icons take the user to the correct website in a new tab and change style to indicate they can be clicked.| Pass | - |
+
 ## Deployment
 
 ## Bugs
