@@ -89,9 +89,40 @@ All colour pairings were checked using Adobe Color Contrast Checker :
 
 ## Features
 
+### Header / Navigation
+
+<details open>
+<summary>Header Image</summary>
+
+![Header Image](documentation/images/navbar.png)
+</details>
+The navigation / header, like many other elements, has a minimal design. The background colour matches the rest of the main / body which allows the page to look cleaner and flow better. Each nav link also has css applied to it to indicate which element is currently hovered over by the user.
+
+### Footer
+
+<details open>
+<summary>Footer Image</summary>
+
+![Footer Image](documentation/images/footer.png)
+</details>
+
+The footer was also kept simple with a design similar to a earlier project. It includes social media icons that when clicked open in a new tab and have styles applied to indicate the user is hovering over them. The website does not have any social media accounts and the links instead take users to the signup / start pages. However, the github is linked to my own account.
+
 ### Home page
 
-### Nav
+<details open>
+<summary>Home Page Image</summary>
+
+![Home Page Image](documentation/images/main-page.png)
+</details>
+
+The home page consists of a hero section, about section and four info cards. The hero section is kept concise and points out how signing up can give the user access to certain features. A sign up button is also included for new users and takes them straight to the registraton page. Info cards can also be found below the about section to give a quick overview about the features available to the user.
+
+<details>
+<summary>Info Cards Image</summary>
+
+![Info Cards Image](documentation/images/info-cards.png)
+</details>
 
 ### Reviews
 
