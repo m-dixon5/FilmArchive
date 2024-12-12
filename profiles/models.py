@@ -38,7 +38,9 @@ class WatchLater(models.Model):
     Model for adding films to watch later list
     """
 
-    user = models.ForeignKey(User, related_name="user_watch_list", on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name="user_watch_list", on_delete=models.CASCADE
+    )
     film_title = models.CharField(max_length=100, null=False, blank=False)
     film_image = ResizedImageField(
         size=(300, 450),

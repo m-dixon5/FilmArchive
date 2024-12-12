@@ -14,7 +14,7 @@ class ProfileForm(forms.ModelForm):
 
 
 class WatcherLaterForm(forms.ModelForm):
-    """ Form to add a film to watch later list """
+    """Form to add a film to watch later list"""
 
     class Meta:
         model = WatchLater
@@ -29,4 +29,3 @@ class WatcherLaterForm(forms.ModelForm):
             "film_title": "Film Title",
             "film_image": "Film Image",
         }
-

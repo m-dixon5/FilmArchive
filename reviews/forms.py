@@ -34,10 +34,12 @@ class ReviewForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
-    """ Form to create a Comment """
+    """Form to create a Comment"""
 
     class Meta:
         model = Comment
-        fields = ["body",]
+        fields = [
+            "body",
+        ]
 
         labels = {"body": "Body"}
